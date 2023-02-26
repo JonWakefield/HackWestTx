@@ -24,6 +24,8 @@ while True:
     # Draw rectangles around the faces
     for (x, y, w, h) in faces:
         cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        # IF WE ENTER THIS PART OF THE CODE IT MEANS A FACE HAS BEEN DETECTED:
+        #print("face")
 
     # Show the frame
     cv2.imshow('Face detection', img)
@@ -33,5 +35,7 @@ while True:
         break
 
 # Release the capture and close the window
+
+
 cap.release()
 cv2.destroyAllWindows()

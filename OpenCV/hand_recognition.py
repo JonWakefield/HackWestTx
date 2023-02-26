@@ -32,10 +32,10 @@ while True:
 
 
     # Defect detection
-    defects = []
-    for i in range(len(hull)):
-        if len(hull[i]) > 3:
-            defects.append(cv2.convexityDefects(contours[i], hull[i]))
+    # defects = []
+    # for i in range(len(hull)):
+    #     if len(hull[i]) > 3:
+    #         defects.append(cv2.convexityDefects(contours[i], hull[i]))
 
 
     # Display the results
